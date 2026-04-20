@@ -1,5 +1,4 @@
-/* global */
 import { TextEncoder, TextDecoder } from 'util'
 
-global.TextEncoder = TextEncoder
-global.TextDecoder = TextDecoder
+globalThis.TextEncoder = TextEncoder
+globalThis.TextDecoder = TextDecoder
