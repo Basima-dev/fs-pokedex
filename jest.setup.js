@@ -1,5 +1,5 @@
-/* eslint-env node */
-const { TextEncoder, TextDecoder } = require('util')
+/* global */
+import TextEncoder, TextDecoder from 'util'
 
 global.TextEncoder = TextEncoder
 global.TextDecoder = TextDecoder
