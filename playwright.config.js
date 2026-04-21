@@ -1,4 +1,4 @@
-/* eslint-env node */
+/* global */
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
   webServer: {
