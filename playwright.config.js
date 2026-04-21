@@ -1,11 +1,10 @@
-/* global */
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
   webServer: {
     command: 'npm run start',
     url: 'http://localhost:8080',
     timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env.CI, // eslint-disable-line no-undef
   },
   testDir: './test/e2e',
   use: {
